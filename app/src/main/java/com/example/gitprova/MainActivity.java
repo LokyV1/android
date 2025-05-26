@@ -23,8 +23,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         findViewById(R.id.bottone).setOnClickListener(v -> {
-            // generate a toast message
+            // genera un messaggio toast
             Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show();
+            // aggiungi un log
+            android.util.Log.d("MainActivity", "Bottoone clickato");
+            // invia una notifica
+
         });
 
 
