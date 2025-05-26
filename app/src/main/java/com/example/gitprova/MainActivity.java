@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
             // aggiungi un log
             android.util.Log.d("MainActivity", "Bottoone clickato");
             // invia una notifica
+            NotificationHelper notificationHelper = new NotificationHelper(this);
+            notificationHelper.createNotification("Bottone", "Cel'hai fatta", R.drawable.ic_launcher_foreground);
 
         });
 
